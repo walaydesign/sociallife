@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;200;300;400;500;600;700;800;900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+body {
+  color: #fff;
+  font-family: "Noto Sans TC";
+}
+
+input, select, button {
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.reserve {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100vh;
+}
+
+.reserve_pic {
+  width: 70%;
+  height: 100%;
+  background-image: url(../img/main_pc.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.reserve_form {
+  width: 30%;
+  background-color: #899914;
+  height: 100%;
+  text-align: center;
+  position: relative;
+  padding-top: 130px;
+}
+
+.reserve_form h1 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  letter-spacing: 0.1em;
+}
+
+.reserve_form h2 {
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0;
+  letter-spacing: 0.15em;
+}
+
+.reserve_form_content {
+  margin: 50px auto 0;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.reserve_form_content h3 {
+  font-size: 22px;
+  font-weight: normal;
+  margin-bottom: 15px;
+  letter-spacing: 0.1em;
+}
+
+.reserve_form_input {
+  height: 43px;
+  background-color: #fff;
+  border: 0;
+  border-radius: 5px;
+  padding: 5px 10px;
+  width: 100%;
+  font-size: 18px;
+}
+
+.reserve_form_input::-webkit-input-placeholder {
+  color: #A6A6A6;
+  font-size: 18px;
+}
+
+.reserve_form_input:-ms-input-placeholder {
+  color: #A6A6A6;
+  font-size: 18px;
+}
+
+.reserve_form_input::-ms-input-placeholder {
+  color: #A6A6A6;
+  font-size: 18px;
+}
+
+.reserve_form_input::placeholder {
+  color: #A6A6A6;
+  font-size: 18px;
+}
+
+.reserve_form_item {
+  width: 73%;
+  margin: 0 auto 15px;
+}
+
+.reserve_form_type {
+  text-align: left;
+  padding-left: 10px;
+}
+
+.reserve_form_type label {
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+.reserve_form_type select {
+  background-color: #fff;
+  border-radius: 5px;
+  border: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 2px 10px 2px 27px;
+  background-image: url(../img/triangle.svg);
+  background-size: 7px;
+  background-position: 12px center;
+  background-repeat: no-repeat;
+  font-size: 18px;
+}
+
+.reserve_form_main {
+  width: 100%;
+}
+
+.reserve_form_check {
+  margin: 45px 0 25px;
+}
+
+.reserve_form_check input[type="checkbox"] {
+  width: 23px;
+  height: 23px;
+  border-radius: 5px;
+  border: 0;
+  margin-right: 5px;
+}
+
+.reserve_form_check label {
+  font-size: 18px;
+  text-align: left;
+}
+
+.reserve_form_btn {
+  width: 73%;
+  margin: 0 auto;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #242C5B;
+  color: #fff;
+  border: 0;
+}
+
+@media screen and (max-width: 1150px) {
+  .reserve_form_item, .reserve_form_btn {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .reserve {
+    height: auto;
+  }
+  .reserve_pic {
+    background-image: none;
+    width: 100%;
+  }
+  .reserve_form {
+    width: 100%;
+    padding-top: 60px;
+  }
+  .reserve_form_content {
+    padding-bottom: 48px;
+  }
+  .reserve_form_item, .reserve_form_btn {
+    width: 73%;
+  }
+  .reserve_form_check input[type="checkbox"] {
+    width: 14px;
+    height: 14px;
+  }
+  .reserve_form_check label {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .reserve_form_item, .reserve_form_btn {
+    width: 100%;
+  }
+}
+
+.footer {
+  position: absolute;
+  font-size: 14px;
+  color: #242C5B;
+  bottom: 10px;
+  text-align: center;
+  width: 100%;
+  right: 0;
+}
+
+.footer a {
+  color: #242C5B !important;
+}
+
+@media screen and (max-width: 991px) {
+  .footer {
+    position: static;
+    background-color: #242C5B;
+    color: #fff;
+    padding: 8px;
+  }
+  .footer a {
+    color: #fff !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */

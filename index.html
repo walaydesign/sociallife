@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宜宸建設</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;200;300;400;500;600;700;800;900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+</head>
+<body>
+
+    <div class="reserve">
+        <div class="reserve_pic"><img class="d-lg-none w-100" src="./public/img/main_m.png" alt=""></div>
+        <div class="reserve_form">
+            <h1>宜宸美學建築</h1>
+            <h2>印象系列NO.25</h2>
+            <form action="" class="reserve_form_content" onsubmit="sendEmail(); reset(); return false">
+                <h3>預約賞屋</h3>
+                <div class="reserve_form_main">
+                    <div class="reserve_form_item">
+                        <input class="reserve_form_input" type="text" id="name" placeholder="請輸入姓名" required>
+                    </div>
+                    <div class="reserve_form_item">
+                        <input class="reserve_form_input" type="number" id="phone" placeholder="請輸入手機" required>
+                    </div>
+                    <div class="reserve_form_item">
+                        <input class="reserve_form_input" type="email" id="email" placeholder="請輸入Email" required>
+                    </div>
+                    <div class="reserve_form_item">
+                        <input class="reserve_form_input" type="text" id="city" placeholder="請輸入現居市區" required>
+                    </div>
+                    <div class="reserve_form_item reserve_form_type">
+                        <label for="houseType">房型意願</label>
+                        <select name="houseType" id="houseType" required>
+                            <option disabled selected>房型選擇</option>
+                            <option value="兩房">兩房</option>
+                            <option value="三房">三房</option>
+                        </select>
+                    </div>
+                    <div class="reserve_form_check d-flex justify-content-center align-items-center mt-md-4 mt-2">
+                        <input type="checkbox" id="check" required>
+                        <label for="check">本人知悉並同意「<a href="https://zhuliads.com/privacy/" target="_blank">個人資料蒐集聲明事項</a>」</label>
+                    </div>
+                    <button class="reserve_form_btn" type="submit"><span>確認送出</span></button>
+                </div>
+            </form>
+            <footer class="footer">Design By <a href="https://zhuliads.com/" target="_blank">Zhuli 築里整合行銷</a></footer>
+        </div>
+    </div>
+    
+    <script src="./public/js/jquery/jquery.min.js"></script>
+    <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./public/js/index.js"></script>
+</body>
+</html>
